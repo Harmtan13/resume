@@ -12,26 +12,26 @@
 </head>
 
 <body>
-  <form action="" class="input-form">
+  <form class="input-form">
     <h1>Form</h1>
     <div>
       <label for="addressed-person">Person you're addressing</label>
-      <input type="text" name="addressed-person" id="addressed-person">
+      <input type="text" name="addressed-person" id="person-addressed" class='form-input'>
     </div>
 
     <div>
       <label for="company-name">Company Name</label>
-      <input type="text" name="company-name" id="company-name">
+      <input type="text" name="company-name" id="company-name" class='form-input'>
     </div>
 
     <div>
       <label for="company-location">Company Location</label>
-      <input type="text" name="company-location" id="company-location">
+      <input type="text" name="company-location" id="company-location" class='form-input'>
     </div>
 
     <div>
-      <label for="greeting">Greeting</label>
-      <input type="text" name="greeting" id="greeting">
+      <label for="position">Position</label>
+      <input type="text" name="position" id="position" class='form-input'>
     </div>
   </form>
 
@@ -91,33 +91,39 @@
   </div>
 
   <div class="content">
-    <p class="no-indent date"></p>
+    <div class="letter-heading">
+      <p class="date"></p>
 
-    <p class="no-indent addressed-person"></p>
+      <p class="person-addressed output"></p>
+      
+      <p class="company-name output"></p>
+  
+      <p class="company-location output"></p>
+    </div>
 
-    <p class="no-indent company-name"></p>
+    <h4>Dear <span class="person-addressed output"></span></h4>
 
-    <p class="no-indent company-location"></p>
+  <p class ='indent'>
+    I am submitting this Letter of application for the posted position of <span class='position output'></span>  along with an enclosed resume. I am very excited to enter into the field of Web Development and am looking to join a company where I can have meaningful contribution. I have a passion for working with technology, and over the past seven years that passion has only grown stronger as I have held various jobs that include smartphone repair, selling cell phones with T-Mobile wireless service, and becoming a web developer.
+  </p>
 
-    <h4 class="no-indent intro"></h4>
+  <p class ='indent'>
+    One major aspect of Web Development that appeals to me is the endless amount there is to learn. The more I learn about it, the more I realize just how little I actually comprehend about it. To some people, that might seem daunting, but to me it’s exhilarating. I’m someone who looks at that and sees an endless amount of ways to improve my skill-set and help drive real business solutions with each increase in my overall knowledge. I have come to a point where I feel that I can make a contribution to a company that is solving some of these problems and I  hope to have an opportunity to do so. 
+  </p>
 
-    <p>
-      I am submitting the enclosed resume for consideration of the Application Support Engineer position you have posted. I have been looking for a position of employment that I can meaningfully contribute to, with a company I hold in high esteem, and a career opportunity that will be fulling and full of advancements opportunities. I believe fulfilling the roll of Support Engineer fits these objectives. I have a passion for working with technology and over the past seven years that passion has only grown stronger as I have held various jobs that include smartphone repair, selling cell phones with T-Mobile wireless service, and becoming a web developer.
-    </p>
+  <p class ='indent'>
+    My passion for technology has been alive since I was young, and it has driven me to learn and tinker with a lot of things. One of those things that helped clarify the direction I needed to go was a company I started called Family-Guard. It started as a project to help some Family Members, but became popular and grew. I remember being excited about the ideas that I had to improve the product by building dynamic features into it, but I didn’t have that skillet myself. So I sold the business and dove head first into the Bottega Bootcamp, where I learned how to develop those dynamic Web Applications.
+  </p>
 
-    <p>
-      I have had a passion for technology since I was young, and that passion has driven me to learn and tinker with a lot of things. The discovery of my passion for networking & programming came after I started my own company where I worked with routers, DNS, and other aspects of the OSI model. The project started out as a passion for the service I was providing which quickly evolved into the technology I was working with. After selling the business, I dove head first into the Bottega Bootcamp, where I learned how to develop Web Applications, got very familiar with the Unix/Linux command line, and started using and preferring to use the Ubuntu operating system.
-    </p>
+  <p class ='indent'>
+    I believe my background and mindset around learning and improving allows me to be a great asset to <span class="company-name output"></span>. Being in sales taught me how to work with other people and to communicate effectively, repairing cell phones helped me learn and create processes to solve problems, and running my own business helped me to learn how to work independently, research my problems, troubleshoot multiple issues in a timely manner, and think critically to find a solution. I look forward to being able to tie those skills into the industry and bring my skills to the team at <span class="company-name output"></span>.
+  </p>
 
-    <p>
-      I believe my background allows me to be a great asset to PrincePerelson & Associates. Being in sales taught me how to work with other people and to communicate effectively, repairing cell phones helped me learn and create processes to solve problems, and running my own business helped me to learn how to work independently, research my problems, troubleshoot multiple issues in a timely manner, and think critically to find a solution. I look forward to being able to tie those skills into the industry and bring my skills to the team at PrincePerelson & Associates I hope that you will consider me for this position.
-    </p>
-
-    <p>
-      I am enthusiastic about exploring this employment opportunity with PrincePerelson & Associates. I look forward to the opportunity to meet with you and interview for this position, so we can further discuss the position and the value I believe I will bring to it and PrincePerelson & Associates. Thank you for your time and consideration. It would be an honor to work with a fast-growing company that helps innovators build a better world. If you have any questions, please call me at 385-209-4959. I look forward to hearing from you soon and meeting with you.
-   </p>
+  <p class="indent">
+    I look forward to the opportunity to meet with you and interview for this position, so we can further discuss the position and the value I believe I will bring to <span class="company-name output"></span>. Thank you for your time and consideration. 
+  </p>
    
-   <p class="no-indent">
+   <p>
     Sincerely,
    </p>
 

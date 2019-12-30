@@ -13,8 +13,11 @@
 p {
   margin: 10px 0;
   line-height: 1.75em;
-  text-indent: 30px;
-  font-size: 1.175em;
+  font-size: 17px;
+}
+
+h4 {
+  margin: 50px 0 10px;
 }
 
 body {
@@ -94,9 +97,12 @@ body > * {
   z-index: 100;
 }
 
-.no-indent,
-.sidebar p {
-  text-indent: 0px;
+.indent {
+  text-indent: 30px;
+}
+
+.content .letter-heading * {
+  margin: 0;
 }
 
 .address p {
