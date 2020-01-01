@@ -159,10 +159,23 @@ body > * {
   margin: 0 0 0 40px;
 }
 
-.job .details .details
+.resume-heading {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.resume-heading > * {
+  margin: 0 5px;
+  text-decoration: none;
+  padding: 0;
+  color: black;
+  font-size: 13px!important;
+}
 
 .resume p {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .resume-side {
