@@ -74,7 +74,8 @@ body > * {
   font-size: 20px;
 }
 
-.social img {
+.social img,
+.resume-heading img {
   object-fit: cover;
   width: 30px;
   height: 30px;
@@ -172,6 +173,13 @@ body > * {
   padding: 0;
   color: black;
   font-size: 13px!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-heading img {
+  margin: 5px;
 }
 
 .resume p {
