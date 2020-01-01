@@ -16,12 +16,11 @@ p {
   font-size: 17px;
 }
 
-h4 {
+.intro {
   margin: 50px 0 10px;
 }
 
 body {
-  height: 1375px;
   margin: 0;
   display: grid;
   grid-template-columns:1fr 350px 713px;
@@ -29,13 +28,11 @@ body {
 }
 
 body > * {
-  padding: 40px;
+  padding: 25px 40px;
 }
 
-.sidebar,
-.content,
-.input-form {
-  height: 100%;
+.page-size {
+  height: 1375px;
   width: 100%;
 }
 
@@ -74,11 +71,13 @@ body > * {
 .sidebar-item h3 {
   margin-bottom: 5px;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .social img {
+  object-fit: cover;
   width: 30px;
+  height: 30px;
   background-color: #fafafa;
   border-radius: 50%;
   padding: 1px;
@@ -119,8 +118,138 @@ body > * {
   margin: 5px;
 }
 
+.resume {
+  border-top: 1px solid black;
+}
+
+.resume .job-history {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+.job-history h1 {
+  grid-column: 1 / -1;
+  margin-bottom: 15px;
+}
+
+.job img {
+  height: 35px;
+  align-self: center;
+}
+
+.job .doordash {
+  height: 17px;
+}
+
+.job .job-heading {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  margin-bottom: 5px;
+}
+
+.job .details {
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+.job .details > *{
+  margin: 0 0 0 40px;
+}
+
+.job .details .details
+
+.resume p {
+  font-size: 15px;
+}
+
+.resume-side {
+  justify-items: start;
+}
+
+.resume-title {
+  position: relative;
+}
+
+.resume-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75%;
+  height: 1px;
+  background: linear-gradient(white 25%, rgba(255, 255, 255, 0));
+}
+
+.soft-skills h1,
+.language-proficiency h1,
+.featured-projects h1 {
+  margin-bottom: 10px;
+  width: none;
+  width: 142px;
+}
+
+.language-proficiency h1 {
+  width: 157px;
+}
+
+.featured-projects h1 {
+  width: auto;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.skill * {
+  padding: 0;
+  margin: 0;
+}
+
+.progress {
+  margin-left: 20px;
+  display: flex;
+}
+
+.progress .bubble {
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.fill {
+  background-color: white;
+}
+
+.featured-projects .skill {
+  margin: 5px 0;
+}
+
+.featured-projects a{
+text-decoration: none;
+color: white;
+}
+
+.featured-projects i,
+.featured-projects img {
+  margin-left: 10px;
+}
+
+.featured-projects img {
+  height: 16px;
+  filter: invert(100%);
+}
+
 @media print {
-  .input-form {
+  .input-form,
+  .filler {
     display: none;
   }
 
