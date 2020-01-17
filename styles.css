@@ -74,6 +74,12 @@ body > * {
   font-size: 20px;
 }
 
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .social img,
 .resume-heading img {
   object-fit: cover;
@@ -87,6 +93,7 @@ body > * {
 .social p {
   color: #fafafa;
   text-decoration: none;
+  margin-left: 20px;
 }
 
 .divider {
@@ -105,7 +112,7 @@ body > * {
   margin: 0;
 }
 
-.address p {
+.location p {
   line-height: 1em;
 }
 
@@ -123,14 +130,18 @@ body > * {
   border-top: 1px solid black;
 }
 
-.resume .job-history {
+.resume .experience {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
 }
 
-.job-history h1 {
+.experience h1 {
   grid-column: 1 / -1;
+  margin-bottom: 10px;
+}
+
+.jobs h2 {
   margin-bottom: 15px;
 }
 
@@ -160,60 +171,84 @@ body > * {
   margin: 0 0 0 40px;
 }
 
+.framework {
+  display: grid;
+}
+
 .resume-heading {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  border-top: 1px solid black;
 }
 
 .resume-heading > * {
-  margin: 0 5px;
   text-decoration: none;
   padding: 0;
   color: black;
-  font-size: 13px!important;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.resume-heading img {
-  margin: 5px;
+.resume-heading p {
+  font-size: 12px !important;
+}
+
+.resume-heading .bubble {
+  width: 10px;
+  height: 10px;
+  margin: 0 2.5px;
+}
+
+.resume-heading h2 {
+  margin-right: 25px;
 }
 
 .resume p {
-  font-size: 16px;
+  font-size: 15px;
 }
 
-.resume-side {
-  justify-items: start;
+.level {
+  margin-left: 20px;
 }
+
+.level p{
+  margin-right: 5px;
+}
+
 
 .resume-title {
   position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .resume-title::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   width: 75%;
   height: 1px;
-  background: linear-gradient(white 25%, rgba(255, 255, 255, 0));
+  background: linear-gradient(black 25%, rgba(0, 0, 0, 0));
+}
+
+.technology-proficiencies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
 }
 
 .soft-skills h1,
-.language-proficiency h1,
+.technology-proficiencies h2,
 .featured-projects h1 {
   margin-bottom: 10px;
   width: none;
-  width: 142px;
 }
 
-.language-proficiency h1 {
-  width: 157px;
+.projects {
+  margin-top: 25px;
 }
 
 .featured-projects h1 {
@@ -237,10 +272,10 @@ body > * {
   display: flex;
 }
 
-.progress .bubble {
+.bubble {
   width: 15px;
   height: 15px;
-  border: 1px solid white;
+  border: 1px solid transparent;
   margin: 0 5px;
   border-radius: 50%;
 }
@@ -248,6 +283,41 @@ body > * {
 .fill {
   background-color: white;
 }
+
+.resume .fill {
+  background-color: black;
+  border-color: black;
+}
+
+.half-circle {
+  position: relative;
+  border: 1px solid black;
+}
+
+.half-circle::after {
+  content: '';
+  position: absolute;
+  background: black;
+  border-radius: 50% 0 0 50%;
+  top: 0;
+  left: 0;
+  width: 55%;
+  height: 100%;
+}
+
+.resume .half-circle,
+.skill .half-circle {
+  background-color: transparent;
+}
+
+.sidebar .half-circle {
+  border: 1px solid white;
+}
+
+.sidebar .half-circle::after {
+  background: white;
+}
+
 
 .featured-projects .skill {
   margin: 5px 0;
@@ -266,6 +336,36 @@ color: white;
 .featured-projects img {
   height: 16px;
   filter: invert(100%);
+}
+
+.projects {
+  margin-bottom: 15px;
+}
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5px 0 10px 0;
+}
+
+.project .description {
+  margin: 0;
+}
+
+.project-tech {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  grid-column-gap: 20px;
+  align-items: center;
+}
+
+.project-tech img {
+  width: 16px;
+}
+
+.seperator {
+  margin: 0 15px;
 }
 
 @media print {
